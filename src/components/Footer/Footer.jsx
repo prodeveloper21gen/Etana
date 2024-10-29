@@ -14,7 +14,7 @@ const Footer = () => {
       <Box sx={{ paddingTop: { md: '600px', xs: '300px' } }}>
         <Box sx={{position:'relative', zIndex:'60', display:'flex', gap:'20px', flexDirection:'column', alignItems:'center', bottom:'25vw'}}>
           <Typography data-aos='zoom-in-up' variant="h3" sx={{ fontFamily: 'Kaushan Script', fontSize: { md: '40px', xs: '4vw' }, color: 'white' }}>Begin Your Adventure <br /> in the World of Etena.</Typography>
-          <Button sx={{background:'linear-gradient(-145deg, #ff4b32, #fe7e24)', color:'white', fontSize:'18px', padding:'15px', borderRadius:'30px'}}>Inferno magic travel</Button>
+          <Button sx={{background:'linear-gradient(-145deg, #ff4b32, #fe7e24)', color:'white', fontSize:'17px', padding:'12px', borderRadius:'30px'}}>Inferno magic travel</Button>
         </Box>
         <img data-aos='fade-right' src="/src/assets/svg/etend.svg" style={{ maxWidth: '100%', filter: 'drop-shadow(0 0 60px #462a2d)', height: 'auto', bottom: '0', position: 'absolute', zIndex: '0' }} alt="" />
         <img src="/src/assets/img/image copy 28.png" style={{ maxWidth: '100%', filter: 'drop-shadow(0 0 60px #3a175d)', height: 'auto', bottom: '0', position: 'absolute', zIndex: '10' }} alt="" />

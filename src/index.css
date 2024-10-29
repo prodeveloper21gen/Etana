@@ -480,7 +480,7 @@ template {
   }
 
   50% {
-    transform: rotate(-5deg) translate(-30px, -30px);
+    transform: rotate(-5deg) translate(-10px, -10px);
   }
 
   100% {

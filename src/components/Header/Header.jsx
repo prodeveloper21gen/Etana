@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import HeroSection from "../heroSection/HeroSection";
+import HeroSection from "../heroSection/HeroSection.jsx";
 import { Link } from 'react-scroll';
 
 const Header = () => {

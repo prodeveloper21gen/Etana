@@ -6,6 +6,24 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Footer from "../Footer/Footer";
 
+import bacImg from '/src/assets/img/image copy 18.png'
+import img1 from "/src/assets/img/image copy 11.png"
+import img2 from "/src/assets/img/image copy 14.png"
+import img3 from "/src/assets/img/image copy 13.png"
+import img4 from "/src/assets/img/image copy 12.png"
+import img5 from "/src/assets/svg/storyText.svg"
+import img6 from "/src/assets/img/image copy 15.png"
+import img7 from "/src/assets/img/image copy 16.png"
+import img8 from "/src/assets/img/image copy 19.png"
+import img9 from "/src/assets/img/image copy 20.png"
+import img10 from "/src/assets/img/image copy 21.png"
+import img11 from "/src/assets/img/image copy 22.png"
+import img12 from "/src/assets/img/image copy 23.png"
+import img13 from "/src/assets/img/IMG_0693 1.png"
+import img14 from "/src/assets/img/image copy 24.png"
+import img15 from "/src/assets/img/image copy 25.png"
+import img16 from "/src/assets/img/image copy 26.png"
+
 const MainSection = () => {
   const controls1 = useAnimation();
   const controls2 = useAnimation();
@@ -153,17 +171,17 @@ const MainSection = () => {
   return (
     <Box>
       <Link to="section3" smooth={true} duration={1000}>
-        <Box sx={{ backgroundImage: 'url("/src/assets/img/image copy 18.png")', backgroundSize: 'cover', backgroundPosition: 'center', marginTop: '-300px' }}>
+        <Box sx={{ backgroundImage: `url("${bacImg}")`, backgroundSize: 'cover', backgroundPosition: 'center', marginTop: '-300px' }}>
           <Box sx={{ display: 'flex', minWidth: 'max-content', justifyContent: 'space-between', position: 'relative', height: { md: '100dvh', xs: '60vh' }, paddingTop: '400px' }}>
             <Element name="section2">
-              <img data-aos='fade-down' className='upAndDown' style={{ maxWidth: '60%', height: 'auto', zIndex: '10', position: 'absolute' }} src="/src/assets/img/image copy 11.png" alt="" />
+              <img data-aos='fade-down' className='upAndDown' style={{ maxWidth: '60%', height: 'auto', zIndex: '10', position: 'absolute' }} src={img1} alt="" />
             </Element>
             <Box className='upAndDown' data-aos='fade-up' sx={{ position: 'relative', display: 'flex', left: '20vw', animationDuration: '3s', top: '-2vw', justifyContent: 'center', width: '100%' }}>
-              <img data-aos='fade-up' style={{ maxWidth: '90%', height: 'auto', position: 'absolute' }} src="/src/assets/img/image copy 14.png" alt="" />
+              <img data-aos='fade-up' style={{ maxWidth: '90%', height: 'auto', position: 'absolute' }} src={img2} alt="" />
             </Box>
             <Box sx={{ position: 'relative', display: 'flex', top: '13vw', width: '100%' }}>
-              <img data-aos='fade-up' className='upAndDown' style={{ maxWidth: '40%', height: 'auto', top: '-12vw', right: '10vw', zIndex: '10', position: 'absolute' }} src="/src/assets/img/image copy 13.png" alt="" />
-              <img data-aos='fade-left' style={{ maxWidth: '70%', height: 'auto', right: '0', position: 'absolute' }} src="/src/assets/img/image copy 12.png" alt="" />
+              <img data-aos='fade-up' className='upAndDown' style={{ maxWidth: '40%', height: 'auto', top: '-12vw', right: '10vw', zIndex: '10', position: 'absolute' }} src={img3} alt="" />
+              <img data-aos='fade-left' style={{ maxWidth: '70%', height: 'auto', right: '0', position: 'absolute' }} src={img4} alt="" />
             </Box>
           </Box>
         </Box>
@@ -171,14 +189,14 @@ const MainSection = () => {
 
       <Link to="section4" smooth={true} duration={1000}>
         <Box sx={{ position: 'relative', backgroundColor: '#38231f' }}>
-          <img src="/src/assets/svg/storyText.svg" style={{ maxWidth: '100%', filter: 'drop-shadow(0 0 60px black)', height: 'auto', position: 'absolute', zIndex: '0' }} alt="" />
+          <img src={img5} style={{ maxWidth: '100%', filter: 'drop-shadow(0 0 60px black)', height: 'auto', position: 'absolute', zIndex: '0' }} alt="" />
           <Box ref={textRef1} sx={{ display: 'grid', paddingTop: '150px', alignItems: 'center', gridTemplateColumns: { md: '50% 50%', xs: '1fr' }, position: 'relative', zIndex: '40' }}>
             <Box className='upAndDown' sx={{ display: 'flex', animationDuration: '4s' }}>
               <Element name="section3">
-                <img data-aos='fade-right' style={{ zIndex: '40', maxWidth: '100%', filter: 'drop-shadow(0 0 50px black)', height: 'auto' }} src="/src/assets/img/image copy 15.png" alt="" />
+                <img data-aos='fade-right' style={{ zIndex: '40', maxWidth: '100%', filter: 'drop-shadow(0 0 50px black)', height: 'auto' }} src={img6} alt="" />
               </Element>
             </Box>
-            <img src="/src/assets/img/image copy 16.png" style={{ maxWidth: '30%', width: '100%', top: '18vw', height: 'auto', position: 'absolute', zIndex: '0' }} alt="" />
+            <img src={img7} style={{ maxWidth: '30%', width: '100%', top: '18vw', height: 'auto', position: 'absolute', zIndex: '0' }} alt="" />
 
             <Box sx={{ display: 'flex', flexDirection: 'column', padding: '20px', gap: '20px' }}>
               {text.map((sentence, index) => (
@@ -212,7 +230,7 @@ const MainSection = () => {
           <Box ref={textRef2} sx={{ display: 'grid', alignItems: 'center', gridTemplateColumns: { md: '55% 45%', xs: '1fr' }, position: '', zIndex: '40' }}>
             <Box className='upAndDown' sx={{ display: 'flex', animationDuration: '4s' }}>
               <Element name="section4">
-                <img data-aos='zoom-in-up' style={{ zIndex: '40', maxWidth: '100%', height: 'auto' }} src="/src/assets/img/image copy 19.png" alt="" />
+                <img data-aos='zoom-in-up' style={{ zIndex: '40', maxWidth: '100%', height: 'auto' }} src={img8} alt="" />
               </Element>
             </Box>
 
@@ -274,7 +292,7 @@ const MainSection = () => {
             </Box>
           </Element>
           <Box sx={{ display: { md: 'flex', xs: 'none' } }}>
-            <img style={{ position: 'absolute', right: '0', height: 'auto', top: '100px', display: { md: 'none', xs: 'none' }, maxWidth: '30%', width: '100%' }} src="/src/assets/img/image copy 20.png" alt="" />
+            <img style={{ position: 'absolute', right: '0', height: 'auto', top: '100px', display: { md: 'none', xs: 'none' }, maxWidth: '30%', width: '100%' }} src={img9} alt="" />
           </Box>
         </Box>
       </Link>
@@ -302,7 +320,7 @@ const MainSection = () => {
               <Box ref={textRef4} sx={{ display: 'grid', paddingTop: '150px', alignItems: 'center', gridTemplateColumns: { md: '50% 50%', xs: '1fr' }, position: 'relative', zIndex: '40' }}>
                 <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                   <Element name="section6">
-                    <img className='rotate' data-aos='fade-up' style={{ zIndex: '40', maxWidth: '100%', filter: 'drop-shadow(0 0 50px black)', height: 'auto' }} src="/src/assets/img/image copy 21.png" alt="" />
+                    <img className='rotate' data-aos='fade-up' style={{ zIndex: '40', maxWidth: '100%', filter: 'drop-shadow(0 0 50px black)', height: 'auto' }} src={img10} alt="" />
                   </Element>
                 </Box>
 
@@ -339,7 +357,7 @@ const MainSection = () => {
               <Box ref={textRef5} sx={{ display: 'grid', paddingTop: '150px', alignItems: 'center', gridTemplateColumns: { md: '50% 50%', xs: '1fr' }, position: 'relative', zIndex: '40' }}>
                 <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                   <Element name="section7">
-                    <img className='rotate' data-aos='fade-up' style={{ zIndex: '40', maxWidth: '100%', filter: 'drop-shadow(0 0 50px black)', height: 'auto' }} src="/src/assets/img/image copy 22.png" alt="" />
+                    <img className='rotate' data-aos='fade-up' style={{ zIndex: '40', maxWidth: '100%', filter: 'drop-shadow(0 0 50px black)', height: 'auto' }} src={img11} alt="" />
                   </Element>
                 </Box>
 
@@ -376,7 +394,7 @@ const MainSection = () => {
               <Box ref={textRef6} sx={{ display: 'grid', paddingTop: '150px', alignItems: 'center', gridTemplateColumns: { md: '50% 50%', xs: '1fr' }, position: 'relative', zIndex: '40' }}>
                 <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                   <Element name="section8">
-                    <img className='rotateW' data-aos='fade-up' style={{ zIndex: '40', maxWidth: '100%', filter: 'drop-shadow(0 0 50px black)', height: 'auto' }} src="/src/assets/img/image copy 23.png" alt="" />
+                    <img className='rotateW' data-aos='fade-up' style={{ zIndex: '40', maxWidth: '100%', filter: 'drop-shadow(0 0 50px black)', height: 'auto' }} src={img12} alt="" />
                   </Element>
                 </Box>
 
@@ -419,12 +437,12 @@ const MainSection = () => {
           <Typography data-aos='fade-right' sx={{ color: '#e0e0e0', fontSize: '20px', width: '100%', maxWidth: '500px', alignSelf: 'end', fontFamily: 'monospace' }}>Join the adventure, align with a clan, and be a part of the legend that shapes the destiny of Etena.</Typography>
 
           <Box sx={{ display: 'flex', flexDirection: 'column', position: 'relative' }}>
-            <img data-aos='fade-left' className='upAndDown' style={{ height: 'auto', alignSelf: 'center', animationDuration: '8s', width: '100%', maxWidth: '1200px' }} src="/src/assets/img/IMG_0693 1.png" alt="" />
-            <img data-aos='fade-up' className='upAndDown' style={{ height: 'auto', animationDuration: '7s', position: 'absolute', top: '100px', maxWidth: '30%' }} src="/src/assets/img/image copy 24.png" alt="" />
-            <img data-aos='fade-right' className='upAndDown' style={{ height: 'auto', animationDuration: '6s', position: 'absolute', right: '0', maxWidth: '30%' }} src="/src/assets/img/image copy 25.png" alt="" />
-            <img data-aos='fade-down' className='upAndDown' style={{ height: 'auto', animationDuration: '4s', position: 'absolute', top: '200px', right: '40vw', maxWidth: '20%' }} src="/src/assets/img/image copy 24.png" alt="" />
-            <img data-aos='zoom-in-up' className='upAndDown' style={{ height: 'auto', animationDuration: '3s', right: '100px', top: '100px', position: 'absolute', maxWidth: '40%' }} src="/src/assets/img/image copy 26.png" alt="" />
-            <img data-aos='zoom-in-down' className='upAndDown' style={{ height: 'auto', animationDuration: '5s', position: 'absolute', maxWidth: '15%' }} src="/src/assets/img/image copy 25.png" alt="" />
+            <img data-aos='fade-left' className='upAndDown' style={{ height: 'auto', alignSelf: 'center', animationDuration: '8s', width: '100%', maxWidth: '1200px' }} src={img13} alt="" />
+            <img data-aos='fade-up' className='upAndDown' style={{ height: 'auto', animationDuration: '7s', position: 'absolute', top: '100px', maxWidth: '30%' }} src={img14} alt="" />
+            <img data-aos='fade-right' className='upAndDown' style={{ height: 'auto', animationDuration: '6s', position: 'absolute', right: '0', maxWidth: '30%' }} src={img15} alt="" />
+            <img data-aos='fade-down' className='upAndDown' style={{ height: 'auto', animationDuration: '4s', position: 'absolute', top: '200px', right: '40vw', maxWidth: '20%' }} src={img14} alt="" />
+            <img data-aos='zoom-in-up' className='upAndDown' style={{ height: 'auto', animationDuration: '3s', right: '100px', top: '100px', position: 'absolute', maxWidth: '40%' }} src={img16} alt="" />
+            <img data-aos='zoom-in-down' className='upAndDown' style={{ height: 'auto', animationDuration: '5s', position: 'absolute', maxWidth: '15%' }} src={img15} alt="" />
           </Box>
         </Box>
       </Link>
